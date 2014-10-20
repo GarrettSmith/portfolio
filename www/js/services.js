@@ -1,26 +1,19 @@
-angular.module('starter.services', [])
+angular.module('portfolio.services', [])
 
-/**
- * A simple example service that returns some data.
- */
-.factory('Friends', function() {
-  // Might use a resource here that returns a JSON array
+.factory('Projects', function() {
 
-  // Some fake testing data
-  var friends = [
-    { id: 0, name: 'Scruff McGruff' },
-    { id: 1, name: 'G.I. Joe' },
-    { id: 2, name: 'Miss Frizzle' },
-    { id: 3, name: 'Ash Ketchum' }
+  var projects = [
+    { title: 'node.PONG' },
+    { title: 'Super Bridge Bros' },
+    { title: 'portfolio' }
   ];
 
   return {
     all: function() {
-      return friends;
+      return projects;
     },
-    get: function(friendId) {
-      // Simple index lookup
-      return friends[friendId];
+    get: function(id) {
+      return projects[id];
     }
   }
 });

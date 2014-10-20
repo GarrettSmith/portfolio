@@ -1,15 +1,8 @@
-angular.module('starter.controllers', [])
+angular.module('portfolio.controllers', [])
 
-.controller('DashCtrl', function($scope) {
+.controller('AppCtrl', function($scope) {
 })
 
-.controller('FriendsCtrl', function($scope, Friends) {
-  $scope.friends = Friends.all();
-})
-
-.controller('FriendDetailCtrl', function($scope, $stateParams, Friends) {
-  $scope.friend = Friends.get($stateParams.friendId);
-})
-
-.controller('AccountCtrl', function($scope) {
+.controller('ProjectsCtrl', function($scope, Projects) {
+  $scope.projects = Projects.all();
 });
