@@ -1,33 +1,24 @@
-module.exports = function(config){
+module.exports = function(config) {
+  var testFiles = [
+    'public/js/requirejs-config.js',
+    'test/unit/js/test-main.js',
+    { pattern: 'public/lib/**/*.js', included: false },
+    { pattern: 'public/js/**/*.js', included: false }
+  ];
+
+  var options = JSON.parse(process.argv[2]);
+
+  if (options.tests) {
+    testFiles.push({ pattern: 'test/unit/' + options.test, included: false });
+  } else {
+    testFiles.push({ pattern: 'test/unit/**/*.js', included: false });
+  }
+
   config.set({
-
-    basePath : './',
-
-    files : [
-      'app/bower_components/angular/angular.js',
-      'app/bower_components/angular-route/angular-route.js',
-      'app/bower_components/angular-mocks/angular-mocks.js',
-      'app/components/**/*.js',
-      'app/view*/**/*.js'
-    ],
-
-    autoWatch : true,
-
-    frameworks: ['jasmine'],
-
-    browsers : ['Chrome'],
-
-    plugins : [
-            'karma-chrome-launcher',
-            'karma-firefox-launcher',
-            'karma-jasmine',
-            'karma-junit-reporter'
-            ],
-
-    junitReporter : {
-      outputFile: 'test_out/unit.xml',
-      suite: 'unit'
-    }
-
+    basePath: '',
+    frameworks: ['requirejs', 'mocha', 'chai'],
+    files: testFiles,
+    autoWatch: false,
+    captureTimeout: 60000
   });
 };

@@ -1,34 +1,53 @@
 {
-  "name": "gsmith-portfolio",
-  "private": true,
-  "version": "0.0.0",
-  "description": "Public portfolio of Garrett Smith",
-  "repository": "https://github.com/GarrettSmith/portfolio",
-  "license": "MIT",
-  "devDependencies": {
-    "karma": "~0.10",
-    "protractor": "^1.1.1",
-    "http-server": "^0.6.1",
-    "bower": "^1.3.1",
-    "shelljs": "^0.2.6",
-    "karma-junit-reporter": "^0.2.2"
-  },
+  "name": "portfolio",
+  "version": "0.0.1",
+  "description": "The portfolio of Garrett Smith",
+  "main": "index.html",
   "scripts": {
     "postinstall": "bower install",
-
-    "prestart": "npm install",
-    "start": "http-server -a localhost -p 8000 -c-1",
-
-    "pretest": "npm install",
-    "test": "karma start karma.conf.js",
-    "test-single-run": "karma start karma.conf.js  --single-run",
-
-    "preupdate-webdriver": "npm install",
-    "update-webdriver": "webdriver-manager update",
-
-    "preprotractor": "npm run update-webdriver",
-    "protractor": "protractor e2e-tests/protractor.conf.js",
-
-    "update-index-async": "node -e \"require('shelljs/global'); sed('-i', /\\/\\/@@NG_LOADER_START@@[\\s\\S]*\\/\\/@@NG_LOADER_END@@/, '//@@NG_LOADER_START@@\\n' + sed(/sourceMappingURL=angular-loader.min.js.map/,'sourceMappingURL=bower_components/angular-loader/angular-loader.min.js.map','app/bower_components/angular-loader/angular-loader.min.js') + '\\n//@@NG_LOADER_END@@', 'app/index-async.html');\""
+    "start": "gulp server",
+    "debug": "gulp debug server",
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/GarrettSmith/portfolio.git"
+  },
+  "author": "Garrett Smith (website url)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GarrettSmith/portfolio/issues"
+  },
+  "homepage": "https://github.com/GarrettSmith/portfolio",
+  "devDependencies": {
+    "bower": "^1.3.1",
+    "chai": "~1.9.0",
+    "commander": "^2.4.0",
+    "gulp": "^3.5.6",
+    "gulp-connect": "^2.0.5",
+    "gulp-htmlhint": "0.0.7",
+    "gulp-htmlmin": "~0.1.1",
+    "gulp-imagemin": "^0.6.1",
+    "gulp-jshint": "^1.5.6",
+    "gulp-karma": "0.0.3",
+    "gulp-minify-css": "^0.3.4",
+    "gulp-protractor": "0.0.11",
+    "gulp-sass": "^0.7.1",
+    "gulp-selenium": "0.0.3",
+    "gulp-uglify": "^0.1.0",
+    "gulp-util": "^2.2.20",
+    "jshint-stylish": "^1.0.0",
+    "karma": "~0.12.0",
+    "karma-chai": "~0.1.0",
+    "karma-chrome-launcher": "~0.1.2",
+    "karma-firefox-launcher": "^0.1.3",
+    "karma-mocha": "~0.1.1",
+    "karma-mocha-reporter": "^0.3.1",
+    "karma-phantomjs-launcher": "~0.1.2",
+    "karma-requirejs": "~0.2.1",
+    "mocha": "^1.17.1",
+    "node-neat": "^1.3.0",
+    "protractor": "^0.22.0",
+    "requirejs": "~2.1.11"
   }
 }

@@ -1,0 +1,27 @@
+// Default lists
+.default-ol {
+  @extend %default-ol;
+}
+.default-ul {
+  @extend %default-ul;
+}
+
+.horizontal-list {
+  padding-left: 0;
+  margin: 0;
+
+  li {
+    margin: 0;
+    display: inline;
+  }
+
+  li + li {
+    margin-left: 10px;
+  }
+
+  &.united {
+    li + li {
+      margin-left: 0;
+    }
+  }
+}

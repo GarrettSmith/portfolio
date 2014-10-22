@@ -1,15 +1,23 @@
 {
-  "name": "angular-seed",
-  "description": "A starter project for AngularJS",
-  "version": "0.0.0",
-  "homepage": "https://github.com/angular/angular-seed",
+  "name": "ng-boilerplate",
+  "version": "1.2.0",
+  "homepage": "http://github.com/ianwalter/ng-boilerplate",
+  "main": "index.html",
+  "authors": [
+    "Ian Kennington Walter (http://ianvonwalter.com)"
+  ],
   "license": "MIT",
-  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules"
+  ],
   "dependencies": {
-    "angular": "1.2.x",
-    "angular-route": "1.2.x",
-    "angular-loader": "1.2.x",
-    "angular-mocks": "~1.2.x",
-    "html5-boilerplate": "~4.3.0"
+    "requirejs": "~2.1.14",
+    "angular": "v1.2.21",
+    "angular-route": "v1.2.21",
+    "angular-mocks": "v1.2.21"
+  },
+  "resolutions": {
+    "angular": ">=1.2.0"
   }
 }
