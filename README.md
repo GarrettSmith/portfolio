@@ -1,7 +1,7 @@
-# [ng-boilerplate](http://ianwalter.github.io/ng-boilerplate/)
-*A base for front-end development with AngularJS.*
+# [Portfolio](http://GarrettSmith.github.io/portfolio/)
+*Garrett Smith's portfolio built off of ng-bootstrap*
 
-[ ![Codeship Status for ianwalter/ng-boilerplate](https://www.codeship.io/projects/e461ca20-0a23-0132-5936-0ae363ad2316/status)](https://www.codeship.io/projects/31717)
+[ ![Codeship Status for GarrettSmith/portfolio](https://codeship.io/projects/da191600-3bc5-0132-fd1a-76541508761b/status)](https://codeship.io/projects/42769)
 
 #### ng-boilerplate includes:
 * **Application**
