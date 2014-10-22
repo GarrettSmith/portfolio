@@ -3,7 +3,14 @@ angular.module('portfolio.services', [])
 .factory('Projects', function() {
 
   var projects = [
-    { title: 'node.PONG' },
+    { 
+      title: 'node.PONG',
+      description: 'Multiplayer pong game. Vote your way to victory!',
+      github_url: 'GarrettSmith/node.PONG',
+      media: [
+        'img/ionic.png'
+      ]
+    },
     { title: 'Super Bridge Bros' },
     { title: 'portfolio' }
   ];

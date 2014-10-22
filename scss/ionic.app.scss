@@ -21,3 +21,22 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
+// Custom style
+
+.main {
+  background: white url(../img/swirl_pattern.png);
+  .card {
+    border-radius: 3px;
+  }
+}
+
+.dark {
+  ion-content {
+    color: $light;
+    background: $dark;
+  }
+  .item {
+    color: $light !important;
+    background-color: $dark !important;
+  }
+}
