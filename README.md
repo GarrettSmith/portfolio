@@ -1,5 +1,5 @@
 # [Portfolio](http://GarrettSmith.github.io/portfolio/)
-*Garrett Smith's portfolio built off of ng-bootstrap*
+*Garrett Smith's portfolio built off of [ng-bootstrap](https://github.com/brian-frichette/ng-Bootstrap)*
 
 [ ![Codeship Status for GarrettSmith/portfolio](https://codeship.io/projects/da191600-3bc5-0132-fd1a-76541508761b/status)](https://codeship.io/projects/42769)
 
