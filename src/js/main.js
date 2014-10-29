@@ -8,6 +8,6 @@
   ], function (angular) {
     // Needs to be separate from app since we don't want to bootstrap to
     // document when running tests
-    angular.bootstrap(document, ['ng-boilerplate']);
+    angular.bootstrap(document, ['portfolio']);
   });
 })(window.requirejs);

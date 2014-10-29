@@ -2,13 +2,18 @@ define(
   [
     'angular',
     'angular-route',
-    'js/controller/home-controller'
+    'js/controller/portfolio-controller',
+    'js/directive/update-title-directive'
   ],
   function(angular) {
     'use strict';
 
     angular
-      .module('ng-boilerplate', ['ngRoute', 'ng-boilerplate.home-controller'])
+      .module('portfolio', [
+        'ngRoute',
+        'portfolio.portfolio-controller',
+        'portfolio.update-title-directive'
+      ])
       .config([
         '$routeProvider',
         '$sceProvider',
@@ -16,8 +21,9 @@ define(
         function($routeProvider, $sceProvider, $locationProvider) { // jshint ignore:line
           $routeProvider
             .when('/', {
-              controller: 'HomeController',
-              templateUrl: 'public/template/home.html'
+              controller: 'PortfolioController',
+              templateUrl: 'public/template/portfolio.html',
+              title: 'The Online Portfolio of Garrett Smith'
             })
             .otherwise({ redirectTo: '/' });
 
