@@ -3,7 +3,8 @@ define(
     'angular',
     'angular-route',
     'js/controller/portfolio-controller',
-    'js/directive/update-title-directive'
+    'js/directive/update-title-directive',
+    'js/directive/github-ribbon-directive'
   ],
   function(angular) {
     'use strict';
@@ -12,7 +13,8 @@ define(
       .module('portfolio', [
         'ngRoute',
         'portfolio.portfolio-controller',
-        'portfolio.update-title-directive'
+        'portfolio.update-title-directive',
+        'portfolio.github-ribbon-directive'
       ])
       .config([
         '$routeProvider',
