@@ -16,7 +16,7 @@
 * **Testing**
     * [angular-mocks](https://github.com/angular/bower-angular-mocks/) - Mocking for AngularJS
     * [Karma](http://karma-runner.github.io/) - JavaScript unit test runner
-    * [Mocha](http://visionmedia.github.io/mocha/) - Testing framework
+    * [Mocha](http://mochajs.org/) - Testing framework
     * [Chai](http://chaijs.com/) - Super-flexible assertion library
     * [Protractor](https://github.com/angular/protractor/) - End-to-end test runner
 * **Style**
